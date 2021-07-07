@@ -62,12 +62,18 @@ img {
 #navbar {
     border: var(--border);
     border-right: 2px solid #a0a0a0;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    min-width: 290px;
+    height: 100%;
 }
 
 .header-div {
     border: var(--border);
-    padding: 15px 5px 0px 5px;
+    padding: 20px 5px 0px 5px;
+    margin: auto;
     width: 15%;
     min-width: 250px;
     display: flex;
@@ -75,9 +81,15 @@ img {
     align-items: center;
 }
 
+nav header {
+    margin-top: 0;
+}
+
 nav ul {
     padding: 0;
     margin-top: 0;
+    height: 80%;
+    overflow-y: auto;
 }
 
 nav li {
@@ -105,6 +117,8 @@ nav li {
 
 main {
     border: var(--border);
+    position: absolute;
+    margin-left: 310px;
     padding: 2vw 3vw;
 }
 
@@ -123,4 +137,27 @@ code {
     padding: 5px 20px;
     border-radius: 3px;
     display: block;
+}
+
+@media (max-width: 500px) {
+    #navbar {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 470px;
+        z-index: 1;
+        border-bottom: 1px solid black;
+    }
+
+    nav ul {
+        height: 250px;
+    }
+
+    #main-doc {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 450px;
+        padding: 15px;
+    }
+
 }
