@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    --border: 0px solid black;
+}
+
+body {
+    margin: 0;
+    line-height: 1.6;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+header {
+    font-family: 'Amatic SC', cursive;
+    font-size: 2.5em;
+}
+
+code {
+    font-family: 'Anonymous Pro', monospace;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #cfb43b;
+    text-shadow: 0px 0px 20px #aaaaaab6;   
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+#nav-bar {
+    border: var(--border);
+    border-right: 2px solid black;
+    position: relative;
+}
+
+.header-div {
+    border: var(--border);
+    border-bottom: 1px solid black;
+    padding: 15px 5px;
+    width: 15%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    margin: 25px 0;
+    font-size: 1.5em;
+}
+
+.to-top {
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.144);
+    font-size: .5em;
+    width: 25%;
+    margin: 5em auto;
+    display: block;
+    background-color: #f0ebeb;
+}
+
+main {
+    border: var(--border);
+    padding: 2vw 3vw;
+}
